@@ -1,3 +1,15 @@
+import { useRouter } from "next/router";
+
 export default function Search() {
-  return <div>Search</div>;
+  const router = useRouter();
+  // router의 query객체에서 q라는 이름을 가져오면 됨
+  // http://localhost:3000/search?q=티셔츠
+  // 이렇게 검색 가능
+  const { q } = router.query;
+  return (
+    <div>
+      <h1>Search page</h1>
+      <h2>{q} search results</h2>
+    </div>
+  );
 }

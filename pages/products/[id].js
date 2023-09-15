@@ -1,5 +1,10 @@
+import { useRouter } from "next/router";
+
 export default function Product() {
-  return <div>Product</div>;
+  const router = useRouter();
+  // 여기서 id값은 파일이름의 [] 안에 있는 id 값임 => Api 연동가능
+  const { id } = router.query;
+  return <div>Product page{id}</div>;
 }
 
 //function이름보다는 파일 이름으로 웹 페이지 생성됨
