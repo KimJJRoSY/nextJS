@@ -1,0 +1,10 @@
+/* 사이트 전체에 적용가능함 */
+
+body {
+  background-color: black;
+  color: white;
+}
+
+a {
+  color: white;
+}
