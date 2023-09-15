@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import SearchForm from "./components/searcjForm";
 
 export default function Search() {
   const router = useRouter();
@@ -9,6 +10,7 @@ export default function Search() {
   return (
     <div>
       <h1>Search page</h1>
+      <SearchForm initialValue={q} />
       <h2>{q} search results</h2>
     </div>
   );
