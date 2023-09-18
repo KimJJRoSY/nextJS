@@ -16,7 +16,7 @@ export default function SearchForm(initialValue = "") {
   //=> preventDefault으로 기본동작 막아줌
   function handleSubmit(e) {
     e.preventDefault();
-    // 검색어가 없으면 홈페이지로이동 =>
+    // 검색어가 없으면 홈페이지로이동 => 검색어 있으면 아무것도 리턴하지 않음
     if (!value) {
       router.push(`/`);
       return;

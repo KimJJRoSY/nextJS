@@ -1,6 +1,5 @@
 import Link from "next/link";
-import styles from "@/styles/Home.module.css";
-import SearchForm from "./components/searcjForm";
+import SearchForm from "@/components/searcjForm";
 
 export default function Home() {
   return (
